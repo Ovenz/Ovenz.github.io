@@ -341,7 +341,7 @@
                 
               
 
-              <time title="Created: 2018-11-28 14:47:50 / Modified: 20:43:10" itemprop="dateCreated datePublished" datetime="2018-11-28T14:47:50+08:00">2018-11-28</time>
+              <time title="Created: 2018-11-28 14:47:50 / Modified: 23:03:38" itemprop="dateCreated datePublished" datetime="2018-11-28T14:47:50+08:00">2018-11-28</time>
             
 
             
@@ -478,7 +478,7 @@ co_varnames:    (&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;x&#39;, &#39;y&#39;
 
 #Python3可用dis.show_code(func)
 </code></pre>
-<h2 id="创建PyCodeObject"><a href="#创建PyCodeObject" class="headerlink" title="创建PyCodeObject"></a>创建PyCodeObject</h2><pre><code class="python">types.CodeType(co_argcount, co_nlocals, co_stacksize, co_flags, co_code, co_consts, co_names, co_varnames, co_filename, co_name, co_firstlineno, co_lnotab[, co_freevars[, co_cellvars]])
+<h2 id="创建PyCodeObject-Python2"><a href="#创建PyCodeObject-Python2" class="headerlink" title="创建PyCodeObject(Python2)"></a>创建PyCodeObject(Python2)</h2><pre><code class="python">types.CodeType(co_argcount, co_nlocals, co_stacksize, co_flags, co_code, co_consts, co_names, co_varnames, co_filename, co_name, co_firstlineno, co_lnotab[, co_freevars[, co_cellvars]])
 </code></pre>
 <h2 id="网鼎杯-第三场-最好的语言"><a href="#网鼎杯-第三场-最好的语言" class="headerlink" title="网鼎杯 第三场 最好的语言"></a>网鼎杯 第三场 最好的语言</h2><pre><code class="bash">magic 03f30d0a
 moddate 6d4a695b (Tue Aug  7 15:29:49 2018)
@@ -559,7 +559,7 @@ moddate 6d4a695b (Tue Aug  7 15:29:49 2018)
    &lt;lnotab&gt; 0c0110010c010c020601090709052f010e01&lt;/lnotab&gt;
 &lt;/code&gt;
 </code></pre>
-<p>每个标签对应<code>PyCodeObject</code>每个域，用<code>types.CodeType</code>即可还原出pyc</p>
+<p>可以分析出是<code>Python2</code>，每个标签对应<code>PyCodeObject</code>每个域，用<code>types.CodeType</code>即可还原出pyc</p>
 <pre><code class="python">import types,marshal
 co_argcount = 1
 co_nlocals = 4
